@@ -1,0 +1,76 @@
+@import '_fonts.scss';
+// Variables
+
+// Light theme
+html {
+    --text-color: #333;
+    --primary-color: #fff;
+    --secondary-color: #ddd;
+    --variant-one: #2f2f2f;
+    --variant-two: #90ee02;
+    --variant-three: #42A5F5;
+}
+html.dark {
+    --text-color: #fff;
+    --primary-color: #333;
+    --secondary-color: #262626;
+    --variant-one: #2f2f2f;
+    --variant-two: #90ee02;
+    --variant-three: #42A5F5;
+}
+
+* {
+    font-family: $secondary_font;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary_font;
+    font-weight: 100
+}
+
+.switch.theme {
+    text-align: center;
+    transform: translateY(5px);
+    .lever.theme {
+        align-self: center
+    }
+    label {
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        color: #333
+    }
+}
+.sidenav-trigger {
+    color: var(--variant-three)
+}
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transition: .3s ease-in-out background-color;
+}
+.switch.theme input[type=checkbox] + .lever, .switch.theme input[type=checkbox]:checked + .lever {
+    background-color: rgba(0,0,0,0.15);
+}
+.switch.theme input[type=checkbox]:checked + .lever:after {
+    background-color: var(--variant-one);
+}
+nav, .sidenav {
+    background-color: var(--primary-color);
+    transition: .1s ease-in-out background-color;
+    li a {
+        color: var(--text-color);
+    }
+}
+.input-field {
+    .helper-text, input, textarea {
+        color: var(--text-color);
+    }
+}
+.page-footer {
+    background-color: var(--variant-three)
+}
+.parallax-container {
+    min-height: 50vh
+}
