@@ -14,6 +14,7 @@ function themeToggle(value) {
             break;
     }
 }
+
 if (darkTheme) {
     themeToggle(1)
 }
