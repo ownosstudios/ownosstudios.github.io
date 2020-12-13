@@ -27,8 +27,32 @@ nav, .sidenav { background-color: var(--primary-color); transition: .1s ease-in-
 
 nav li a, .sidenav li a { color: var(--text-color); }
 
+nav { position: fixed; z-index: 1000; }
+
 .input-field .helper-text, .input-field input, .input-field textarea { color: var(--text-color); }
 
-.page-footer { background-color: var(--variant-three); }
+.btn, .btn:hover, .btn:active, .btn:focus { background-color: var(--variant-three); color: #fff; }
 
-.parallax-container { min-height: 50vh; }
+.page-footer { background-color: var(--variant-one); }
+
+.parallax-container { min-height: 70vh; }
+
+.top_banner { height: 64px; width: 100%; position: relative; }
+
+.studio_def { border-width: .025px 0; border-style: solid; margin-top: 5rem; }
+
+blockquote { border-left-color: var(--text-color); }
+
+.social_links { padding: 2rem; color: var(--text-color); }
+
+.social_links i { font-size: 3rem; transition: .1s ease-in; }
+
+.social_links .fa-facebook-official:hover { color: #3b5998; }
+
+.social_links .fa-instagram:hover { color: #8134af; }
+
+.social_links .fa-twitter-square:hover { color: #08a0e9; }
+
+.social_links .fa-github-square:hover { color: #000; }
+
+.social_links .fa-youtube-play:hover { color: #e62117; }

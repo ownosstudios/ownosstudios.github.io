@@ -25,3 +25,4 @@ $('.switch.theme').on('click', function () {
     isDark ?
         themeToggle(1) : themeToggle(0);
 })
+
