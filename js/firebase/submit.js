@@ -13,7 +13,7 @@ $('#submit').on('click', function(e){
             if(error) {
                 window.alert(error.message);
             } else {
-                M.toast({html: 'Form Submitted!'});
+                
                 $('#contact_form')[0].reset()
             }
         })

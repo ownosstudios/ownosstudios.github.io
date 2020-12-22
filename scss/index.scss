@@ -24,61 +24,58 @@ html.dark {
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $primary_font;
-    font-weight: 100
-}
-
-.switch.theme {
-    text-align: center;
-    transform: translateY(5px);
-    .lever.theme {
-        align-self: center
-    }
-    label {
-        display: inline-flex;
-        align-content: center;
-        justify-content: center;
-        color: #333
-    }
-}
-.sidenav-trigger {
-    color: var(--variant-three)
-}
 body {
     background-color: var(--secondary-color);
     color: var(--text-color);
     transition: .3s ease-in-out background-color;
 }
-.switch.theme input[type=checkbox] + .lever, .switch.theme input[type=checkbox]:checked + .lever {
-    background-color: rgba(0,0,0,0.15);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary_font;
+    font-weight: 100
 }
-.switch.theme input[type=checkbox]:checked + .lever:after {
-    background-color: var(--variant-one);
+
+button, a, input, textarea {
+    outline: none !important;
+    cursor: pointer;
+    font-family: $secondary_font;
+    font-weight: 300 !important;
 }
-nav, .sidenav {
+
+div:not(.alert):not(.carousel-caption), p, span, header, label {
+    font-family: $secondary_font;
+    color: var(--text-color)
+}
+
+nav {
     background-color: var(--primary-color);
     transition: .1s ease-in-out background-color;
     li a {
         color: var(--text-color);
     }
 }
-nav {
-    position: fixed;
-    z-index: 1000
-}
-.input-field {
-    .helper-text, input, textarea {
-        color: var(--text-color);
+
+footer {
+    height: 100%;
+    width: 100%;
+    border-top: 1px rgba(0,0,0,0.3) solid;
+    background-color: var(--variant-one) !important;
+    margin: 3rem 0 0 0 !important;
+    position: relative;
+    color: #fff;
+    a:focus {
+        color: inherit !important
+    }
+    ul {
+        list-style-type: none
     }
 }
-.btn, .btn:hover, .btn:active, .btn:focus {
-    background-color: var(--variant-three);
-    color: #fff
+
+textarea {
+    resize: none;
+    height: 15rem !important
 }
-.page-footer {
-    background-color: var(--variant-one);
-}
+
 .parallax-container {
     min-height: 70vh;
 }
@@ -95,8 +92,10 @@ nav {
 blockquote {
     border-left-color: var(--text-color)
 }
+.form-group {
+    text-align: left
+}
 .social_links {
-    padding: 2rem;
     color: var(--text-color);
     i {
         font-size: 3rem;

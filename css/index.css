@@ -7,33 +7,25 @@ html.dark { --text-color: #fff; --primary-color: #333; --secondary-color: #26262
 
 * { font-family: "Open Sans"; font-weight: 300; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Raleway"; font-weight: 100; }
-
-.switch.theme { text-align: center; transform: translateY(5px); }
-
-.switch.theme .lever.theme { align-self: center; }
-
-.switch.theme label { display: inline-flex; align-content: center; justify-content: center; color: #333; }
-
-.sidenav-trigger { color: var(--variant-three); }
-
 body { background-color: var(--secondary-color); color: var(--text-color); transition: .3s ease-in-out background-color; }
 
-.switch.theme input[type=checkbox] + .lever, .switch.theme input[type=checkbox]:checked + .lever { background-color: rgba(0, 0, 0, 0.15); }
+h1, h2, h3, h4, h5, h6 { font-family: "Raleway"; font-weight: 100; }
 
-.switch.theme input[type=checkbox]:checked + .lever:after { background-color: var(--variant-one); }
+button, a, input, textarea { outline: none !important; cursor: pointer; font-family: "Open Sans"; font-weight: 300 !important; }
 
-nav, .sidenav { background-color: var(--primary-color); transition: .1s ease-in-out background-color; }
+div:not(.alert):not(.carousel-caption), p, span, header, label { font-family: "Open Sans"; color: var(--text-color); }
 
-nav li a, .sidenav li a { color: var(--text-color); }
+nav { background-color: var(--primary-color); transition: .1s ease-in-out background-color; }
 
-nav { position: fixed; z-index: 1000; }
+nav li a { color: var(--text-color); }
 
-.input-field .helper-text, .input-field input, .input-field textarea { color: var(--text-color); }
+footer { height: 100%; width: 100%; border-top: 1px rgba(0, 0, 0, 0.3) solid; background-color: var(--variant-one) !important; margin: 3rem 0 0 0 !important; position: relative; color: #fff; }
 
-.btn, .btn:hover, .btn:active, .btn:focus { background-color: var(--variant-three); color: #fff; }
+footer a:focus { color: inherit !important; }
 
-.page-footer { background-color: var(--variant-one); }
+footer ul { list-style-type: none; }
+
+textarea { resize: none; height: 15rem !important; }
 
 .parallax-container { min-height: 70vh; }
 
@@ -43,7 +35,9 @@ nav { position: fixed; z-index: 1000; }
 
 blockquote { border-left-color: var(--text-color); }
 
-.social_links { padding: 2rem; color: var(--text-color); }
+.form-group { text-align: left; }
+
+.social_links { color: var(--text-color); }
 
 .social_links i { font-size: 3rem; transition: .1s ease-in; }
 
