@@ -14,13 +14,13 @@
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
             <h6 class="navbar-brand">Ownos Studios</h6>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse justify-content-md-end" id="mainNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
@@ -34,7 +34,7 @@
         <main>
             <div class="parallax-container">
                 <div class="parallax">
-                    <img class="img-fluid" src="media/bg_2.png" alt="Banner 2">
+                    <img class="img-fluid w-100" src="media/bg_2.png" alt="Banner 2">
                 </div>
             </div>
             <div class="container text-center">
@@ -44,15 +44,15 @@
                     <h6><i>Noun</i></h6>
                     <p>A place where an artist, photographer, sculptor, etc. works</p>
                 </div>
-                <h3 style="font-weight: 300;">
-                    <blockquote><i><span class="fa fa-quote-left"></span> A place where art is born. <span class="fa fa-quote-right"></span></i></blockquote>
+                <h3 class="p-5 m-0" style="font-weight: 300;">
+                    <blockquote class="m-0"><i><span class="fa fa-quote-left"></span> A place where art is born. <span class="fa fa-quote-right"></span></i></blockquote>
                 </h3>
             </div>
             <hr>
-            <div class="container">
+            <div class="container" id="about">
                 <div class="text-center">
-                    <h1>About Ownos</h1>
-                    <p class="text-left">
+                    <h1 class="pt-5">About Ownos</h1>
+                    <p class="text-justify py-5">
                         Extrapolating from the above definition, we take the meaning of “Studios” very seriously. We believe that a true studio is a place where art is born and cultivated. A place where anyone with enough interest and talent can come in and create something new and incredible.
                         <br><br>
                         And just so, Ownos Studios is a comprehensive environment under which a number of projects, spanning across various industries, are undertaken and executed by the fresh talent of undergraduate students of India. We don’t believe that art is limited to a painter’s canvas or a musician’s instrument. We believe all creation to be artistic. And so, Ownos Studios aims to create an environment for all fields of work.
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="container text-center">
+            <div class="container text-center" id="contact">
                 <div class="p-5">
                     <h1>Get in touch</h1>
                     <p>
@@ -146,20 +146,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <h5>Company Bio</h5>
+                        <h4>Company Bio</h4>
                         <p>We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
                     </div>
                     <div class="col-md-6">
-                        <h5>Connect</h5>
+<!--
+                        <h4>Connect</h4>
                         <ul>
                             <li><a class="white-text" href="#!">Link 1</a></li>
                             <li><a class="white-text" href="#!">Link 2</a></li>
                             <li><a class="white-text" href="#!">Link 3</a></li>
                             <li><a class="white-text" href="#!">Link 4</a></li>
                         </ul>
+-->
                     </div>
                 </div>
             </div>
+            <div class="text-center" id="copyright"><span></span></div>
         </footer>
 
         <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>

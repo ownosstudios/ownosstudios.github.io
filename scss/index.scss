@@ -52,6 +52,10 @@ nav {
     transition: .1s ease-in-out background-color;
     li a {
         color: var(--text-color);
+        text-align: center
+    }
+    .navbar-brand {
+        margin: 0;
     }
 }
 
@@ -62,12 +66,25 @@ footer {
     background-color: var(--variant-one) !important;
     margin: 3rem 0 0 0 !important;
     position: relative;
-    color: #fff;
+    a {
+        color: #fff !important;
+        opacity: 0.4;
+        text-decoration: none !important;
+    }
+    a:hover {
+        opacity: 1;
+    }
     a:focus {
-        color: inherit !important
+        color: inherit !important;
     }
     ul {
-        list-style-type: none
+        list-style-type: none;
+    }
+    p, div, span {
+        color: #fff !important;
+    }
+    #copyright {
+        padding-top: 3rem
     }
 }
 
@@ -78,6 +95,13 @@ textarea {
 
 .parallax-container {
     min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .parallax {
+        width: 100%;
+//        position: absolute;
+    }
 }
 .top_banner {
     height: 64px;
@@ -87,10 +111,8 @@ textarea {
 .studio_def {
     border-width: .025px 0;
     border-style: solid;
-    margin-top: 5rem
-}
-blockquote {
-    border-left-color: var(--text-color)
+    margin-top: 5rem;
+    padding: 3rem 0;
 }
 .form-group {
     text-align: left

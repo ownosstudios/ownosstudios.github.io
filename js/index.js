@@ -26,3 +26,13 @@ $('.switch.theme').on('click', function () {
         themeToggle(1) : themeToggle(0);
 })
 
+$('.navbar .nav-link:not(.dropdown-toggle), .navbar .dropdown-item').each(function () {
+    $(this).click(function (e) {
+        e.preventDefault()
+        $('html, body').delay(400).animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 1000);
+    });
+});
+
+$('#copyright').html('&copy; Ownos Studios ' + (new Date().getFullYear()))

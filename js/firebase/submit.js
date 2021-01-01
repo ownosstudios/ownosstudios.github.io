@@ -17,5 +17,7 @@ $('#submit').on('click', function(e){
                 $('#contact_form')[0].reset()
             }
         })
+    } else {
+        window.alert('Please fill the fields correctly');
     }
 })
