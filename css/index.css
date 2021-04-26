@@ -1,62 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-html { --text-color: #333; --primary-color: #fff; --secondary-color: #ddd; --variant-one: #2f2f2f; --variant-two: #90ee02; --variant-three: #42A5F5; }
+* {
+  padding: 0;
+  margin: 0;
+}
 
-html.dark { --text-color: #fff; --primary-color: #333; --secondary-color: #262626; --variant-one: #2f2f2f; --variant-two: #90ee02; --variant-three: #42A5F5; }
+.container {
+  width: 100%;
+  min-height: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+}
 
-* { font-family: "Open Sans"; font-weight: 300; }
+.container .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.625rem;
+  list-style: none;
+}
 
-body { background-color: var(--secondary-color); color: var(--text-color); transition: .3s ease-in-out background-color; }
+.container .navbar .logo {
+  align-items: left;
+  margin-left: 2rem;
+}
 
-h1, h2, h3, h4, h5, h6 { font-family: "Raleway"; font-weight: 100; }
+.container .navbar nav {
+  flex: 1;
+  text-align: right;
+}
 
-button, a, input, textarea { outline: none !important; cursor: pointer; font-family: "Open Sans"; font-weight: 300 !important; }
+.container .navbar nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1.875rem;
+}
 
-div:not(.alert):not(.carousel-caption), p, span, header, label { font-family: "Open Sans"; color: var(--text-color); }
+.container .navbar nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-nav { background-color: var(--primary-color); transition: .1s ease-in-out background-color; }
+.container .navbar nav ul li a:hover {
+  color: magenta;
+}
 
-nav li a { color: var(--text-color); text-align: center; }
+.body {
+  margin: 10rem;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-nav .navbar-brand { margin: 0; }
+.body .section1 p {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffa726 40%, rgba(255, 0, 15, 0.63) 63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-footer { height: 100%; width: 100%; border-top: 1px rgba(0, 0, 0, 0.3) solid; background-color: var(--variant-one) !important; margin: 3rem 0 0 0 !important; position: relative; }
+.work {
+  box-sizing: border-box;
+  background: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+  border-radius: 29px;
+  text-align: center;
+  width: 100%;
+}
 
-footer a { color: #fff !important; opacity: 0.4; text-decoration: none !important; }
+.work h1 {
+  color: rgba(255, 0, 15, 0.63);
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
 
-footer a:hover { opacity: 1; }
-
-footer a:focus { color: inherit !important; }
-
-footer ul { list-style-type: none; }
-
-footer p, footer div, footer span { color: #fff !important; }
-
-footer #copyright { padding-top: 3rem; }
-
-textarea { resize: none; height: 15rem !important; }
-
-.parallax-container { min-height: 70vh; display: flex; justify-content: center; align-items: center; }
-
-.parallax-container .parallax { width: 100%; }
-
-.top_banner { height: 64px; width: 100%; position: relative; }
-
-.studio_def { border-width: .025px 0; border-style: solid; margin-top: 5rem; padding: 3rem 0; }
-
-.form-group { text-align: left; }
-
-.social_links { color: var(--text-color); }
-
-.social_links i { font-size: 3rem; transition: .1s ease-in; }
-
-.social_links .fa-facebook-official:hover { color: #3b5998; }
-
-.social_links .fa-instagram:hover { color: #8134af; }
-
-.social_links .fa-twitter-square:hover { color: #08a0e9; }
-
-.social_links .fa-github-square:hover { color: #000; }
-
-.social_links .fa-youtube-play:hover { color: #e62117; }
+.work p {
+  color: #4A1E08;
+  text-align: justify;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  width: 40rem;
+}

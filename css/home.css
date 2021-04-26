@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 2rem 0 !important;
+  margin: 0 2rem !important;
+}
+
+.navbar-brand {
+  margin-left: 3rem !important;
+}
+
+.navbar-nav li {
+  padding: 0 0.625rem !important;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  text-transform: uppercase !important;
+  font-weight: 37.5rem;
+}
+
+.navbar-nav li a:hover {
+  color: blue !important;
+  font-weight: bold !important;
+}
+
+main {
+  margin-top: 7.5rem;
+}
+
+#container {
+  text-align: center;
+}
+
+#container h1 {
+  font-size: 2.5rem;
+}

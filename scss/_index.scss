@@ -1,0 +1,127 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+// -----------------navbar------------------
+// #right-top {
+//     position: absolute;
+//     top: 5rem;
+//     top: -10rem;
+//     height: auto;
+//     width: auto;
+//     right: 0%;
+// }
+
+// #left-center {
+//     position: absolute;
+//     height: auto;
+//     width: auto;
+//     top: 50%;
+
+// }
+
+// #right-bottom {
+//     position: absolute;
+//     right: 0%;
+//     bottom: 0%;
+//     height: auto;
+//     width: auto;
+// }
+
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 100%;
+
+    .navbar {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.625rem;
+        list-style: none;
+
+        .logo {
+            align-items: left;
+            margin-left: 2rem;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+
+            ul li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 1.875rem;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: rgb(255, 0, 255);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// body par--------------------
+.body {
+    margin: 10rem;
+    box-sizing: border-box;
+    text-align: center;
+
+    .section1 {
+        p {
+            font-size: 4rem;
+            font-weight: bold;
+            // background: #FFA726;
+            background: linear-gradient(to right, rgba($color: #FFA726, $alpha: 1.0) 40%,  rgba($color: #FF000F, $alpha: 0.63)  63%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.work {
+    // position: absolute;
+    
+    box-sizing: border-box;
+    background: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+    border-radius: 29px;
+    text-align: center;
+    width: 100%;
+
+    h1 {
+        color: rgba(255, 0, 15, 0.63);
+        text-align: left;
+        margin-left: 10rem;
+        margin-top: 5rem;
+        font-weight: bold;
+
+    }
+
+    p {
+        color: #4A1E08;
+        text-align: justify;
+        margin-left: 10rem;
+        margin-top: 3rem;
+        width: 40rem;
+    }
+}
+
