@@ -3,9 +3,12 @@
   padding: 0;
 }
 
+body {
+  background-color: #E5E5E5;
+}
+
 .navbar {
   padding: 2rem 0 !important;
-  margin: 0 2rem !important;
 }
 
 .navbar-brand {
@@ -28,13 +31,76 @@
 }
 
 main {
-  margin-top: 7.5rem;
+  margin-top: 3.5rem;
 }
 
 #container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #container h1 {
   font-size: 2.5rem;
+}
+
+.work {
+  box-sizing: border-box;
+  background: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+  border-radius: 29px;
+  text-align: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.work h1 {
+  color: rgba(255, 0, 15, 0.63);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.work p {
+  color: #4A1E08;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+#service {
+  text-align: center;
+  margin: 5rem;
+  color: #FF000F;
+  font-weight: 800;
+}
+
+#cards-group .card-deck {
+  padding: 2rem 10rem;
+}
+
+#cards-group .card-deck .card {
+  height: 70vh;
+  border-radius: 29px;
+  background: linear-gradient(163.6deg, rgba(255, 238, 0, 0.48) 5.16%, rgba(255, 124, 7, 0.536) 27.61%, rgba(255, 0, 15, 0.496) 63.67%, rgba(193, 26, 187, 0.504) 98.46%);
+  box-shadow: 5px 5px 10px black;
+}
+
+#cards-group .card-deck .card .card-body .card-title {
+  text-align: center;
+  color: #FF000F;
+  font-weight: 800;
+}
+
+footer {
+  background: rgba(255, 238, 0, 0.55);
+}
+
+footer .row .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .img-fluid {
+  height: 20vh;
 }
