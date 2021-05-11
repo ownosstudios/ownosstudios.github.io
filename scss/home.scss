@@ -2,13 +2,22 @@
     margin: 0;
     padding: 0;
 }
+html{
+    --text-color: #FF000F;
+    --background-color: #E5E5E5;
+    --a-color: black;
+    --a-hover : blue;
+    --work-background : linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+    --p-color : #4A1E08 ;
+    --card-background : linear-gradient(163.6deg, rgba(255, 238, 0, 0.48) 5.16%, rgba(255, 124, 7, 0.536) 27.61%, rgba(255, 0, 15, 0.496) 63.67%, rgba(193, 26, 187, 0.504) 98.46%);
+    --footer-background : rgba(255, 238, 0, 0.55);
+
+}
 body{
-    background-color: #E5E5E5;;
+    background-color: var(--background-color);
 }
 .navbar{
     padding: 2rem 0 !important;
-    // margin: 0 2rem !important;
-
 }
 .navbar-brand{
     margin-left: 3rem !important;
@@ -17,11 +26,11 @@ body{
     li{
         padding: 0 0.625rem !important;
         a{
-            color: black !important;
+            color: var(--a-color) !important;
             text-transform: uppercase !important;
             font-weight: 37.5rem;
             &:hover{
-                color: blue !important;
+                color: var(--a-hover) !important;
                 font-weight: bold !important;
             }
         }  
@@ -38,32 +47,29 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    // margin: 15rem;
+    
     h1{
         font-size: 2.5rem;
     }
 }
 .work {
     box-sizing: border-box;
-    background: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+    background: var(--work-background);
     border-radius: 29px;
     text-align: center;
     width: 100%;
     padding-top: 5rem;
 
     h1 {
-        color: rgba(255, 0, 15, 0.63);
+        color: var(--text-color);
         text-align: justify;
-        // margin-left: 10rem;
-        // margin-top: 5rem;
         font-weight: bold;
 
     }
 
     p {
-        color: #4A1E08;
+        color: var(--p-color);
         text-align: justify;
-        // margin-left: 10rem;
         margin-top: 3rem;
         
     }
@@ -72,7 +78,7 @@ main{
 #service{
     text-align: center;
     margin: 5rem;
-    color: #FF000F;
+    color: var(--text-color);
     font-weight: 800;
 }
 
@@ -82,13 +88,13 @@ main{
         padding: 2rem 10rem;
         .card{ height: 70vh;
             border-radius: 29px;
-            background: linear-gradient(163.6deg, rgba(255, 238, 0, 0.48) 5.16%, rgba(255, 124, 7, 0.536) 27.61%, rgba(255, 0, 15, 0.496) 63.67%, rgba(193, 26, 187, 0.504) 98.46%);
+            background: var(--card-background);
             box-shadow: 5px 5px 10px black;
             
             .card-body{
                 .card-title{
                     text-align: center;
-                    color: #FF000F;
+                    color: var(--text-color);
                     font-weight: 800;
                 }
             }
@@ -107,7 +113,7 @@ footer{
             align-items: center;
         }
     }
-    background: rgba(255, 238, 0, 0.55);
+    background: var(--footer-background);
     .img-fluid{
         height: 20vh;
     }
