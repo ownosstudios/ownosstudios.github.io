@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+$enable-responsive-font-sizes: true;
+$enable-gradients: true;
+
+
+$body-color: white;
+$glassColor: linear-gradient(140deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08));
+$text-color: #FF000F;
+$background-color: #30054d;
+$a-color: black;
+$a-hover: blue;
+$footer-background: #64069e;
+;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: $background-color !important;
+}
+
+.navbar {
+    padding: 2rem 0 !important;
+}
+
+.navbar-brand {
+    margin-left: 3rem !important;
+}
+
+.navbar-nav {
+    li {
+        padding: 0 0.625rem !important;
+
+        a {
+            color: $a-color !important;
+            text-transform: uppercase !important;
+            font-weight: 37.5rem;
+
+            &:hover {
+                color: $a-hover !important;
+                font-weight: bold !important;
+            }
+        }
+
+    }
+
+}
+
+main {
+    margin-top: 3.5rem;
+    background-color: $background-color !important;
+}
+
+#cards {
+    margin-top: 6.5rem;
+   h1{
+       text-align: center;
+       color: #fff;
+       padding: 90px 0px;
+
+    }
+   p{
+    text-align: center;
+    color: #fff;
+    margin-top: 0.2rem !important;
+    }
+}
+
+.container {
+    margin-top: 3.5rem;
+
+    .glass {
+        margin-top: 5.5rem;
+    }
+}
+
+
+
+.glass {
+    background-image: $glassColor !important;
+    backdrop-filter: blur(15px);
+    border-radius: 29px;
+    height: 60vh;
+    
+
+    border: 1px solid black;
+}
+
+p.first {
+    margin-top: 5rem !important;
+}
+
+button {
+    border-radius: 10px 0px 10px 0px !important;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    font-size: 1rem !important;
+}
+
+footer {
+    background: $footer-background !important;
+
+    .row {
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    .img-fluid {
+        height: 20vh;
+    }
+
+}
+
+
+
+
+// -----------media query ----------------
+
+@media (max-width: 1200px) {
+    .btn {
+        right: 75px;
+        height: auto;
+    }
+}
+
+@media (max-width:992px) {
+    .btn {
+        right: 53px;
+        height: auto;
+        
+    }
+    .glass{
+        height: 50vh !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 490px) {
+    .btn {
+        right: 25px;
+        position: fixed;
+        height: auto;
+    }
+}
+@media(max-width:489px) and (min-width:360px){
+    .btn{
+
+        right: 20px;
+        height: auto;
+        font-size: 0.3rem !important;
+    }
+}
+@media(max-width:359px) and (min-width:210px){
+    .btn{
+        right: 10px;
+        font-size: 0.2rem !important;
+    }
+}
