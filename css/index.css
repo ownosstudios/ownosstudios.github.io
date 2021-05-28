@@ -8,6 +8,7 @@ html {
   --variant-one: #2f2f2f;
   --variant-two: #90ee02;
   --variant-three: #42A5F5;
+  font-size: 10px;
 }
 
 html.dark {
