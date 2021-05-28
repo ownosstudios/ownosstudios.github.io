@@ -1,9 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import './common';
+
 html{
-    --text-color: #FF000F;
+    --text-color: rgba($color: #ff000f,$alpha: 0.63);
     --background-color: #E5E5E5;
     --a-color: black;
     --a-hover : blue;
@@ -15,31 +13,6 @@ html{
 }
 body{
     background-color: var(--background-color);
-}
-.navbar{
-    padding: 2rem 0 !important;
-}
-.navbar-brand{
-    margin-left: 3rem !important;
-}
-.navbar-nav{
-    li{
-        padding: 0 0.625rem !important;
-        a{
-            color: var(--a-color) !important;
-            text-transform: uppercase !important;
-            font-weight: 37.5rem;
-            &:hover{
-                color: var(--a-hover) !important;
-                font-weight: bold !important;
-            }
-        }  
-
-    }
-
-}
-main{
-    margin-top: 3.5rem;
 }
 #container{
     text-align: center;
@@ -84,26 +57,58 @@ main{
 
 #cards-group{
 
-    .card-deck{
+    .card-deck {
         padding: 2rem 10rem;
-        .card{ height: 70vh;
-            border-radius: 29px;
-            background: var(--card-background);
-            box-shadow: 5px 5px 10px black;
-            
-            .card-body{
-                .card-title{
-                    text-align: center;
-                    color: var(--text-color);
-                    font-weight: 800;
-                }
+        @media only screen and (max-width: 1100px) {
+            & {
+                padding: 1rem 4rem;
             }
-            
         }
-        
+        @media only screen and (max-width: 720px) {
+            & {
+                padding: 0;
+                display: block;
+            }
+        }
     }
     
 }
+
+.btn-custom {
+    // background-color: #4A1E08;
+    border: {
+        radius: 0 10px 0 10px;
+        width: 2px;
+        style: solid;
+        color: #fff;
+    };
+    color: #fff;
+    &:hover {
+        background-color: #fff;
+        color: #333;
+    }
+}
+.card {
+    min-height: 70vh;
+    border-radius: 29px;
+    background: var(--card-background);
+    // box-shadow: 5px 5px 10px rgba($color: #000, $alpha: .3);
+    box-shadow: 0;
+    border: 0;
+
+    .card-body{
+        .card-title{
+            text-align: center;
+            color: var(--text-color);
+            font-weight: 800;
+        }
+    }
+    .card-footer {
+        background-color: transparent;
+        border: 0;
+        text-align: center;
+    }
+} 
 
 footer{
     .row{
