@@ -1,51 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-* { margin: 0; padding: 0; }
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.navbar {
+  padding: 1.5rem 0 !important;
+}
 
-body { background-color: #30054d !important; }
+.navbar-brand {
+  margin-left: 3rem !important;
+}
 
-.navbar { padding: 2rem 0 !important; }
+.navbar-nav li {
+  padding: 0 0.625rem !important;
+}
 
-.navbar-brand { margin-left: 3rem !important; }
+.navbar-nav li a {
+  color: black !important;
+  text-transform: uppercase !important;
+  font-weight: 37.5rem;
+}
 
-.navbar-nav li { padding: 0 0.625rem !important; }
+.navbar-nav li a:hover {
+  color: blue !important;
+  font-weight: bold !important;
+}
 
-.navbar-nav li a { color: black !important; text-transform: uppercase !important; font-weight: 37.5rem; }
+footer {
+  background: rgba(255, 238, 0, 0.55);
+}
 
-.navbar-nav li a:hover { color: blue !important; font-weight: bold !important; }
+footer .row .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-main { margin-top: 3.5rem; background-color: #30054d !important; }
+footer .img-fluid {
+  height: 20vh;
+}
 
-#cards { margin-top: 6.5rem; }
+* {
+  font-family: "Open Sans";
+}
 
-#cards h1 { text-align: center; color: #fff; padding: 90px 0px; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+}
 
-#cards p { text-align: center; color: #fff; margin-top: 0.2rem !important; }
+main {
+  margin-top: 84px;
+}
 
-.container { margin-top: 3.5rem; }
+.navbar {
+  padding: 2rem 0 !important;
+}
 
-.container .glass { margin-top: 5.5rem; }
+.navbar-brand {
+  margin-left: 3rem !important;
+}
 
-.glass { background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08)) !important; backdrop-filter: blur(15px); border-radius: 29px; height: 60vh; border: 1px solid black; }
+.navbar-nav li {
+  padding: 0 0.625rem !important;
+}
 
-p.first { margin-top: 5rem !important; }
+.navbar-nav li a {
+  color: black !important;
+  text-transform: uppercase !important;
+  font-weight: 37.5rem;
+}
 
-button { border-radius: 10px 0px 10px 0px !important; }
+.navbar-nav li a:hover {
+  color: blue !important;
+  font-weight: bold !important;
+}
 
-.btn { position: absolute; bottom: 20px; right: 100px; font-size: 1rem !important; }
+main {
+  margin-top: 3.5rem;
+  background-color: #30054d !important;
+}
 
-footer { background: #64069e !important; }
+#cards {
+  margin-top: 6.5rem;
+}
 
-footer .row .column { display: flex; justify-content: center; align-items: center; }
+#cards h1 {
+  text-align: center;
+  color: #fff;
+  padding: 90px 0px;
+}
 
-footer .img-fluid { height: 20vh; }
+#cards p {
+  text-align: center;
+  color: #fff;
+  margin-top: 0.2rem !important;
+}
 
-@media (max-width: 1200px) { .btn { right: 75px; height: auto; } }
+.container {
+  margin-top: 3.5rem;
+}
 
-@media (max-width: 992px) { .btn { right: 53px; height: auto; }
-  .glass { height: 50vh !important; } }
+.container .glass {
+  margin-top: 5.5rem;
+}
 
-@media (max-width: 767px) and (min-width: 490px) { .btn { right: 25px; position: fixed; height: auto; } }
+.glass {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08)) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 29px;
+  height: 60vh;
+  border: 1px solid black;
+}
 
-@media (max-width: 489px) and (min-width: 360px) { .btn { right: 20px; height: auto; font-size: 0.3rem !important; } }
+.glass .center {
+  text-align: center !important;
+}
 
-@media (max-width: 359px) and (min-width: 210px) { .btn { right: 10px; font-size: 0.2rem !important; } }
+p.first {
+  margin-top: 5rem !important;
+}
+
+.card-footer {
+  background-color: transparent;
+  border: 0;
+  text-align: center !important;
+}
+
+.btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px 0px 15px 0px  !important;
+  width: 100px;
+  text-align: center !important;
+}
+
+#dropdownMenuButtons {
+  color: #c11abb;
+  text-align: center !important;
+}
+
+.menu {
+  color: black;
+}
