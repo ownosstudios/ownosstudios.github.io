@@ -35,47 +35,19 @@ body{
     text-align: center;
     margin: 5rem;
     color: $text-color;
-    font-weight: 800;
+    font-weight: 800 !important;
 }
-#cards-group{
-    .card-deck {
-        padding: 2rem 10rem;
-        @media only screen and (max-width: 1100px) {
-            & {
-                padding: 1rem 4rem;
-            }
-        }
-        @media only screen and (max-width: 720px) {
-            & {
-                padding: 0;
-                display: block;
-            }
-        }
-    }  
+#service{
+    color: $text-color !important;
 }
-.card {
-    min-height: 70vh;
-    border-radius: 29px;
-    background: $card-background;
-    box-shadow: 0;
-    border: 0;
-    .card-body{
-        .card-title{
-            text-align: center;
-            color: $text-color;
-            font-weight: 800;
-        }
-    }
-    .right-arrow{
-        text-align: center;
-        width: 100%;
-        font-size: 50px;
-        color: white;
-        padding-bottom: 30px;
-    }
-    .card-footer {
-        background-color: transparent;
-        border: 0;
-        text-align: center;
-    }
-} 
+.card-title{
+    color: $text-color;
+    font-weight: 800 !important;
+}
+.right-arrow{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
