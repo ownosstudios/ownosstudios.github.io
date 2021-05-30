@@ -10,11 +10,7 @@
         a{
             color: $a-color !important;
             text-transform: uppercase !important;
-            font-weight: 37.5rem;
-            &:hover{
-                color: $a-hover !important;
-                font-weight: bold !important;
-            }
+            font-weight: 37.5rem;          
         }  
 
     }

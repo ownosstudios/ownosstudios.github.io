@@ -20,11 +20,6 @@
   font-weight: 37.5rem;
 }
 
-.navbar-nav li a:hover {
-  color: blue !important;
-  font-weight: bold !important;
-}
-
 footer {
   background: rgba(255, 238, 0, 0.55);
 }
@@ -45,13 +40,13 @@ footer .img-fluid {
 
 #cards h1 {
   text-align: center;
-  color: #fff;
+  color: rgba(255, 0, 15, 0.63) !important;
   padding: 90px 0px;
 }
 
 #cards p {
   text-align: center;
-  color: #fff;
+  color: rgba(255, 0, 15, 0.63) !important;
   margin-top: 0.2rem !important;
 }
 
@@ -108,7 +103,7 @@ main {
 
 main {
   margin-top: 3.5rem;
-  background-color: #30054d !important;
+  background-image: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%) !important;
 }
 
 p.first {
