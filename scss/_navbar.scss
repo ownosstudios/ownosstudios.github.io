@@ -1,0 +1,18 @@
+.navbar{
+    padding: 1.5rem 0 !important;
+}
+.navbar-brand{
+    margin-left: 3rem !important;
+}
+.navbar-nav{
+    li{
+        padding: 0 0.625rem !important;
+        a{
+            color: $a-color !important;
+            text-transform: uppercase !important;
+            font-weight: 37.5rem;          
+        }  
+
+    }
+
+}

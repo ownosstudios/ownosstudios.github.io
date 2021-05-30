@@ -1,159 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-html {
-  --text-color: #333;
-  --primary-color: #fff;
-  --secondary-color: #ddd;
-  --variant-one: #2f2f2f;
-  --variant-two: #90ee02;
-  --variant-three: #42A5F5;
+.navbar {
+  padding: 1.5rem 0 !important;
 }
 
-html.dark {
-  --text-color: #fff;
-  --primary-color: #333;
-  --secondary-color: #262626;
-  --variant-one: #2f2f2f;
-  --variant-two: #90ee02;
-  --variant-three: #42A5F5;
+.navbar-brand {
+  margin-left: 3rem !important;
 }
 
-* {
-  font-family: "Open Sans";
-  font-weight: 300;
+.navbar-nav li {
+  padding: 0 0.625rem !important;
 }
 
-body {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  transition: .3s ease-in-out background-color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway";
-  font-weight: 100;
-}
-
-button, a, input, textarea {
-  outline: none !important;
-  cursor: pointer;
-  font-family: "Open Sans";
-  font-weight: 300 !important;
-}
-
-div:not(.alert):not(.carousel-caption), p, span, header, label {
-  font-family: "Open Sans";
-  color: var(--text-color);
-}
-
-nav {
-  background-color: var(--primary-color);
-  transition: .1s ease-in-out background-color;
-}
-
-nav li a {
-  color: var(--text-color);
-  text-align: center;
-}
-
-nav .navbar-brand {
-  margin: 0;
+.navbar-nav li a {
+  color: black !important;
+  text-transform: uppercase !important;
+  font-weight: 37.5rem;
 }
 
 footer {
-  height: 100%;
-  width: 100%;
-  border-top: 1px rgba(0, 0, 0, 0.3) solid;
-  background-color: var(--variant-one) !important;
-  margin: 3rem 0 0 0 !important;
-  position: relative;
+  background: rgba(255, 238, 0, 0.55);
 }
 
-footer a {
-  color: #fff !important;
-  opacity: 0.4;
-  text-decoration: none !important;
-}
-
-footer a:hover {
-  opacity: 1;
-}
-
-footer a:focus {
-  color: inherit !important;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer p, footer div, footer span {
-  color: #fff !important;
-}
-
-footer #copyright {
-  padding-top: 3rem;
-}
-
-textarea {
-  resize: none;
-  height: 15rem !important;
-}
-
-.parallax-container {
-  min-height: 70vh;
+footer .row .column {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parallax-container .parallax {
-  width: 100%;
+footer .img-fluid {
+  height: 20vh;
 }
 
-.top_banner {
-  height: 64px;
-  width: 100%;
-  position: relative;
+#cards {
+  margin-top: 4rem;
 }
 
-.studio_def {
-  border-width: .025px 0;
-  border-style: solid;
-  margin-top: 5rem;
-  padding: 3rem 0;
+#cards h1 {
+  text-align: center;
+  color: rgba(255, 0, 15, 0.63) !important;
+  padding: 40px 0px;
 }
 
-.form-group {
-  text-align: left;
+.container {
+  margin-top: 3.5rem;
 }
 
-.social_links {
-  color: var(--text-color);
+.glass {
+  background: linear-gradient(163.6deg, rgba(255, 238, 0, 0.48) 5.16%, rgba(255, 124, 7, 0.536) 27.61%, rgba(255, 0, 15, 0.496) 63.67%, rgba(193, 26, 187, 0.504) 98.46%) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 29px;
+  min-height: 60vh;
+  border: 1px solid black;
 }
 
-.social_links i {
-  font-size: 3rem;
-  transition: .1s ease-in;
+.glass .center {
+  text-align: center !important;
 }
 
-.social_links .fa-facebook-official:hover {
-  color: #3b5998;
+.card-title {
+  text-align: center;
 }
 
-.social_links .fa-instagram:hover {
-  color: #8134af;
+#features {
+  color: #c11abb !important;
 }
 
-.social_links .fa-twitter-square:hover {
-  color: #08a0e9;
+.card-footer {
+  background-color: transparent;
+  border: 0;
+  text-align: center !important;
 }
 
-.social_links .fa-github-square:hover {
-  color: #000;
+.card {
+  bottom: 100px;
+  margin-top: 100px;
 }
 
-.social_links .fa-youtube-play:hover {
-  color: #e62117;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+}
+
+main {
+  margin-top: 84px;
+}
+
+.text {
+  border: 2px solid #fff;
+  border-radius: 12px;
+  margin: 15px 0px;
+  padding: 12px 8px;
+  justify-content: center;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.btn {
+  display: block;
+  color: #FFF !important;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 472px;
+  width: 170px;
+  font-size: 20px;
+  border: 2px solid #fff !important;
+  border-radius: 15px 0px 15px 0px !important;
+  box-sizing: border-box;
 }

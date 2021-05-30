@@ -1,0 +1,14 @@
+footer{
+    .row{
+        .column{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    background: $footer-background;
+    .img-fluid{
+        height: 20vh;
+    }
+    
+}
