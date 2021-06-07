@@ -1,13 +1,21 @@
 #cards {
-    margin-top: 4rem;
+    margin-top: 6.5rem;
     h1{
         text-align: center;
         color: rgba(255, 0, 15, 0.63) !important;
-        padding: 40px 0px;
+        padding: 90px 0px;
+    }
+    p {
+        text-align: center;
+        color: rgba(255, 0, 15, 0.63) !important;
+        margin-top: 0.2rem !important;
     }
 }
 .container {
     margin-top: 3.5rem;
+    .glass {
+        margin-top: 5.5rem;
+    }
 }
 .glass {
     background: $glassColor !important;

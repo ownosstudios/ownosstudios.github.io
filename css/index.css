@@ -1,1 +1,167 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");.navbar{padding:1.5rem 0 !important}.navbar-brand{margin-left:3rem !important}.navbar-nav li{padding:0 0.625rem !important}.navbar-nav li a{color:#000 !important;text-transform:uppercase !important;font-weight:37.5rem}footer{background:rgba(255,238,0,0.55)}footer .row .column{display:flex;justify-content:center;align-items:center}footer .img-fluid{height:20vh}#cards{margin-top:4rem}#cards h1{text-align:center;color:rgba(255,0,15,0.63) !important;padding:40px 0px}.container{margin-top:3.5rem}.glass{background:linear-gradient(163.6deg, rgba(255,238,0,0.48) 5.16%, rgba(255,124,7,0.536) 27.61%, rgba(255,0,15,0.496) 63.67%, rgba(193,26,187,0.504) 98.46%) !important;backdrop-filter:blur(15px);border-radius:29px;min-height:60vh;border:1px solid black}.glass .center{text-align:center !important}.card-title{text-align:center}#features{color:#c11abb !important}.card-footer{background-color:transparent;border:0;text-align:center !important}.card{bottom:100px;margin-top:100px}h1,h2,h3,h4,h5,h6{font-family:"Raleway"}main{margin-top:84px}.text{border:2px solid #fff;border-radius:12px;margin:15px 0px;padding:12px 8px;justify-content:center}input,textarea{border:none;background:none;outline:none;font-size:18px}.btn{display:block;color:#FFF !important;cursor:pointer;margin-top:30px;margin-left:472px;width:170px;font-size:20px;border:2px solid #fff !important;border-radius:15px 0px 15px 0px !important;box-sizing:border-box}
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.navbar {
+  padding: 1.5rem 0 !important;
+}
+
+.navbar-brand {
+  margin-left: 3rem !important;
+}
+
+.navbar-nav li {
+  padding: 0 0.625rem !important;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  text-transform: uppercase !important;
+  font-weight: 37.5rem;
+}
+
+footer {
+  background: rgba(255, 238, 0, 0.55);
+}
+
+footer .row .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .img-fluid {
+  height: 20vh;
+}
+
+#cards {
+  margin-top: 6.5rem;
+}
+
+#cards h1 {
+  text-align: center;
+  color: rgba(255, 0, 15, 0.63) !important;
+  padding: 90px 0px;
+}
+
+#cards p {
+  text-align: center;
+  color: rgba(255, 0, 15, 0.63) !important;
+  margin-top: 0.2rem !important;
+}
+
+.container {
+  margin-top: 3.5rem;
+}
+
+.container .glass {
+  margin-top: 5.5rem;
+}
+
+.glass {
+  background: linear-gradient(163.6deg, rgba(255, 238, 0, 0.48) 5.16%, rgba(255, 124, 7, 0.536) 27.61%, rgba(255, 0, 15, 0.496) 63.67%, rgba(193, 26, 187, 0.504) 98.46%) !important;
+  backdrop-filter: blur(15px);
+  border-radius: 29px;
+  min-height: 60vh;
+  border: 1px solid black;
+}
+
+.glass .center {
+  text-align: center !important;
+}
+
+.card-title {
+  text-align: center;
+}
+
+#features {
+  color: #c11abb !important;
+}
+
+.card-footer {
+  background-color: transparent;
+  border: 0;
+  text-align: center !important;
+}
+
+.card {
+  bottom: 100px;
+  margin-top: 100px;
+}
+
+* {
+  font-family: "Open Sans";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+}
+
+main {
+  margin-top: 84px;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+#container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container h1 {
+  font-size: 2.5rem;
+}
+
+.work {
+  box-sizing: border-box;
+  background: linear-gradient(179.71deg, rgba(255, 220, 38, 0.36) 2.25%, rgba(241, 206, 21, 0) 99.77%);
+  border-radius: 29px;
+  text-align: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.work h1 {
+  color: rgba(255, 0, 15, 0.63);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.work p {
+  color: #4A1E08;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+#service {
+  text-align: center;
+  margin: 5rem;
+  color: rgba(255, 0, 15, 0.63);
+  font-weight: 800 !important;
+}
+
+#service {
+  color: rgba(255, 0, 15, 0.63) !important;
+}
+
+.card-title {
+  color: rgba(255, 0, 15, 0.63);
+  font-weight: 800 !important;
+}
+
+.right-arrow {
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  padding-bottom: 30px;
+}
+>>>>>>> origin/main

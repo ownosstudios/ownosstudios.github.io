@@ -1,27 +1,53 @@
 @import './common';
-.text {
-  border: 2px solid #fff;
-  border-radius: 12px;
-  margin: 15px 0px;
-  padding: 12px 8px;
-  justify-content: center;
+
+body{
+    background-color: $background-color1;
 }
-input,
-textarea {
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
+#container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    h1{
+        font-size: 2.5rem;
+    }
 }
-.btn {
-  display: block;
-  color: #FFF !important;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-left: 472px;
-  width: 170px;
-  font-size: 20px;
-  border: 2px solid #fff !important;
-  border-radius: 15px 0px 15px 0px !important;
-  box-sizing: border-box;
+.work {
+    box-sizing: border-box;
+    background: $work-background;
+    border-radius: 29px;
+    text-align: center;
+    width: 100%;
+    padding-top: 5rem;
+    h1 {
+        color: $text-color;
+        text-align: justify;
+        font-weight: bold;
+    }
+    p {
+        color: $p-color;
+        text-align: justify;
+        margin-top: 3rem;      
+    }
+}
+#service{
+    text-align: center;
+    margin: 5rem;
+    color: $text-color;
+    font-weight: 800 !important;
+}
+#service{
+    color: $text-color !important;
+}
+.card-title{
+    color: $text-color;
+    font-weight: 800 !important;
+}
+.right-arrow{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
 }
