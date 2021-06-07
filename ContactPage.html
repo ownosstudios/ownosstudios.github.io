@@ -6,14 +6,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
-                            <!-- NAV SECTION -->
+    <!-- NAV SECTION -->
+
     <nav class="navbar navbar-expand-md navbar-light fixed-top  bg-white ">
         <a class="navbar-brand" href="#">Ownos Studios</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,101 +37,103 @@
                     <a class="nav-link" href="#">services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="desktop5.html">contact</a>
+                    <a class="nav-link" href="#">contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-          <!-- BODY SECTION -->
-
+    <!-- BODY SECTION -->
     <main>
-        <div class="card">
-            <h1 class="heading1">Have a project? Let’s build together</h1>
-            <div class="contact">
-                <h1>Get In Touch</h1>
-
-                <div class="text">
-                    <input type="text" placeholder="Name">
-                </div>
-                <div class="text">
-
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="text">
-
-                    <input type="text" placeholder="Service">
-                </div>
-                <div class="text">
-                    <input type="text" placeholder="Message">
-                    <textarea></textarea>
-                </div>
-                <a class="btn" onclick="myFunction()">Submit</a>
-            </div>
-
-
-
-        </div>
-        </section>
-        <script>
-            function myFunction() {
-                alert("Your Response has been Submitted :)");
-            }
-        </script>
-
         <section>
-            <div class="card1">
-                <h1 class="heading2">Contact Us</h1>
-                <div class="contact2">
+            <section id="cards">
+                <h1 id="heading">Have a project? Let’s build together</h1>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <div class="card glass">
+                                <div class="card-body">
+                                    <h1>Get In Touch</h1>
+                                    <div class="text">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="text">
 
-                </div>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div class="text">
 
-
-            </div>
-        </section>
-
-        <footer class="page-footer font-small teal pt-4">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div class="col-md-6 mt-md-0 mt-3">
-                        <div class="row d-flex align-item-center">
-                            <div class="col-md-6">
-                                <img src="logo.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-6">
-                                <h1 id="ownos">Ownos <br> Studios</h1>
+                                        <input type="text" placeholder="Service">
+                                    </div>
+                                    <div class="text">
+                                        <input type="text" placeholder="Message">
+                                        <textarea></textarea>
+                                    </div>
+                                    <a class="btn" onclick="myFunction()">Submit</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <hr class="clearfix w-100 d-md-none pb-3">
-
-                    <div class="col-md-6 mb-md-0 mb-3">
-
-                        <div class="d-flex flex-column">
-                            <h5 class="my-1">Follow Us</h5>
-                            <a type="button" class="my-1">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a type="button" class="my-1">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a type="button" class="my-1">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <a type="button" class="my-1">
-                                <i class="fa fa-dribbble"></i>
-                            </a>
+                </div>
+            </section>
+            <section id="cards">
+                <h1 id="heading">Contact Us</h1>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card glass">
+                                <div class="card-body">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-copyright text-center py-3">© 2021 Copyright:
-                <a href="#"> Ownos Studios</a>
-            </div>
-        </footer>
+            </section>
+
+            <footer class="page-footer font-small teal pt-4">
+                <div class="container-fluid text-center text-md-left">
+                    <div class="row">
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <div class="row d-flex align-item-center">
+                                <div class="col-md-6">
+                                    <img src="media/logo.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 id="ownos">Ownos <br> Studios</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div class="col-md-6 mb-md-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="my-1">Follow Us</h5>
+                                <a type="button" class="my-1" href="#">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a type="button" class="my-1" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a type="button" class="my-1" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a type="button" class="my-1" href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                    <a href="#"> Ownos Studios</a>
+                </div>
+            </footer>
     </main>
 
-
+    <script>
+        function myFunction() {
+            alert("Your Response has been Submitted :)");
+        }
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
