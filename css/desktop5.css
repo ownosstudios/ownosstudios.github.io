@@ -117,3 +117,7 @@ p.first {
   width: 100px;
   text-align: center !important;
 }
+
+.card {
+  bottom: 30px !important;
+}
